@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="weather-app">
+        <div class="container">
+            <h3 class="brand">Погода</h3>
+            <div>
+                <h1 class="temp">16&#176;</h1>
+                <div class="city-time">
+                    <h1 class="name">Лондон</h1>
+                    <small>
+                        <span class="time">06:09</span>
+                        -
+                        <span class="date">
+                            Понедельник 19 сентября
+                        </span>
+                    </small>
+                </div>
+                <div class="weather">
+                    <img src="./icons/day/113.png" 
+                    class="icon"
+                    alt="icon"
+                    width="50"
+                    height="50"
+                    />
+                    <span class="condition">Облачно</span>
+                </div>
+            </div>
+        </div>
+        <div class="panel">
+            <form id="locationInput">
+                <input 
+                type="text"
+                class="search"
+                placeholder="Ваше местоположение..."
+                />
+                <button type="submit" class="submit">
+                    <i class="fa-search"></i>
+                </button>
+            </form>
+            <ul class="cities">
+                <li class="city">Нью-Йорк</li>
+                <li class="city">Калифорния</li>
+                <li class="city">Париж</li>
+                <li class="city">Токио</li>
+            </ul>
+            <ul class="details">
+                <h4>Детали погоды</h4>
+                <li>
+                    <span>Облачно</span>
+                    <span class="cloud">89%</span>
+                </li>
+                <li>
+                    <span>Влажность</span>
+                    <span class="humidity">64%</span>
+                </li>
+                <li>
+                    <span>Ветер</span>
+                    <span class="wind">8км/ч</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
